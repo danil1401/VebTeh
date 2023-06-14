@@ -29,43 +29,76 @@
           <img src="./Семинар 4, ЗД 2. Мое резюме_files/glaza-belyy_fon-kotik-morda-polosatyy.webp" style="width:100%" alt="Avatar">
           <div class="w3-display-bottomleft w3-container w3-text-black">
                     
-              <?php
+            <?php
               $name= 'Данил';
-              $prof= 'Данил';
-              $country= 'Данил';
-              $city= 'Данил';
-              $email= 'Данил';
-              $Tnumber= 'Данил';
+              $prof= 'Разработчик- аналитик';
+              $country= 'Россия';
+              $city= 'Тольятти';
+              $email= 'danil111@mail.ru';
+              $Tnumber= '+79879186101';
               ?>
 
-            <h2>Имя</h2>
+            <h2>
+              <?php
+              echo $name;
+              ?>
+            </h2>
+
           </div>
         </div>
         <div class="w3-container">
-          <p><i class="fa fa-briefcase fa-fw w3-margin-right w3-large w3-text-teal"></i> <?php $prof; ?></p>
-          <p><i class="fa fa-home fa-fw w3-margin-right w3-large w3-text-teal"></i>Город, страна</p>
-          <p><i class="fa fa-envelope fa-fw w3-margin-right w3-large w3-text-teal"></i>E-mail</p>
-          <p><i class="fa fa-phone fa-fw w3-margin-right w3-large w3-text-teal"></i>Телефон</p>
+          <p><i class="fa fa-briefcase fa-fw w3-margin-right w3-large w3-text-teal"></i> 
+            <?php echo $prof; ?></p>
+          <p><i class="fa fa-home fa-fw w3-margin-right w3-large w3-text-teal"></i>
+            <?php echo $country "," $city; ?> </p>
+          <p><i class="fa fa-envelope fa-fw w3-margin-right w3-large w3-text-teal"></i>
+            <?php echo $email; ?></p>
+          <p><i class="fa fa-phone fa-fw w3-margin-right w3-large w3-text-teal"></i>
+            <?php echo $Tnumber; ?></p>
           <hr>
 
           <p class="w3-large"><b><i class="fa fa-asterisk fa-fw w3-margin-right w3-text-teal"></i>Навыки</b></p>
+          
+          <?php 
+          $massiv_skils = [85,83,70,80]
+          ?>
+
           <p>Adobe Photoshop</p>
           <div class="w3-light-grey w3-round-xlarge w3-small">
-            <div class="w3-container w3-center w3-round-xlarge w3-teal" style="width:90%">90%</div>
+            <div class="w3-container w3-center w3-round-xlarge w3-teal" style="width:90%">
+              <?php 
+              echo $massiv_skils[0];
+              ?>
+            </div>
           </div>
+
           <p>Photography</p>
           <div class="w3-light-grey w3-round-xlarge w3-small">
             <div class="w3-container w3-center w3-round-xlarge w3-teal" style="width:80%">
-              <div class="w3-center w3-text-white">80%</div>
+              <div class="w3-center w3-text-white">
+                <?php 
+                echo $massiv_skils[1];
+                ?>
+              </div>
             </div>
           </div>
+
           <p>Illustrator</p>
           <div class="w3-light-grey w3-round-xlarge w3-small">
-            <div class="w3-container w3-center w3-round-xlarge w3-teal" style="width:75%">75%</div>
+            <div class="w3-container w3-center w3-round-xlarge w3-teal" style="width:75%">
+              <?php 
+              echo $massiv_skils[2];
+              ?>
+            </div>
           </div>
+
           <p>Media</p>
           <div class="w3-light-grey w3-round-xlarge w3-small">
-            <div class="w3-container w3-center w3-round-xlarge w3-teal" style="width:50%">50%</div>
+            <div class="w3-container w3-center w3-round-xlarge w3-teal" style="width:50%">
+              <?php 
+              echo $massiv_skils[3];
+              ?>
+            </div>
           </div>
           <br>
 
